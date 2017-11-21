@@ -34,7 +34,6 @@ typedef struct Wavehead
 @interface PcmPlayer ()
 
 @property (nonatomic,strong) AVAudioPlayer *player;
-@property (nonatomic,strong) NSMutableData *pcmData;
 @property (nonatomic,strong) NSTimer *timer;
 
 @end
