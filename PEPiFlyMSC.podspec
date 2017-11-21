@@ -1,17 +1,20 @@
 Pod::Spec.new do |s|
+
   s.name         = "PEPiFlyMSC"
 
   s.version      = "1.0.0"
 
-  s.homepage     = "https://github.com/PEP-Digital-Publishing/PEPiFlyMSC"
+  s.homepage     = "https://github.com/PEPDigitalPublishing/PEPiFlyMSC"
 
   s.author       = { "PEPiFlyMSC" => "PEP" }
+
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
 
   s.summary      = "此项目仅用于存放讯飞语音SDK，便于在项目中接入。如需使用请自行前往讯飞开放平台下载"
 
   s.platform     =  :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/PEP-Digital-Publishing/PEPiFlyMSC.git" }
+  s.source       = { :git => "https://github.com/PEPDigitalPublishing/PEPiFlyMSC.git" }
 
   s.vendored_frameworks = "iflyMSC.framework"
 
@@ -29,14 +32,14 @@ Pod::Spec.new do |s|
 
   s.subspec "results" do |results|
 
-    results.source_files  = "ise/Results/*.{h,m}"
+    results.source_files  = "ise/results/*.{h,m}"
 
   end
 
 
   s.frameworks = "CoreLocation","CoreTelephoney","AddressBook","AudioToolbox","AVFoundation","SystemConfiguration","Foundation","UIKit","AddressBook","QuartzCore","CoreGraphics"
 
-  s.libraries = "libz", "libc++"
+  s.ios.library = 'z'
 
   s.requires_arc = true
 
