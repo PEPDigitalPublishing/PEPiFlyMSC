@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "PEPiFlyMSC"
 
-  s.version      = "1.0.0"
+  s.version      = "1.172"
 
   s.homepage     = "https://github.com/PEPDigitalPublishing/PEPiFlyMSC"
 
@@ -37,9 +37,9 @@ Pod::Spec.new do |s|
   end
 
 
-  s.frameworks = "CoreLocation","CoreTelephony","AddressBook","AudioToolbox","AVFoundation","SystemConfiguration","Foundation","UIKit","AddressBook","QuartzCore","CoreGraphics"
+  s.frameworks = "CoreLocation","CoreTelephony","AddressBook","AudioToolbox","AVFoundation","SystemConfiguration","Foundation","UIKit","QuartzCore","CoreGraphics"
 
-  s.ios.library = 'z'
+  s.ios.library = 'z','c++'
 
   s.requires_arc = true
 
