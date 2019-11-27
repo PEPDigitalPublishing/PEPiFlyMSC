@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/PEPDigitalPublishing/PEPiFlyMSC.git" }
 
   s.vendored_frameworks = "iflyMSC.framework"
+  
+  s.static_framework = true
 
   s.subspec "ise" do |ise|
 
