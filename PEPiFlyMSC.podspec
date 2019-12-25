@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "PEPiFlyMSC"
 
-  s.version      = "1.172"
+  s.version      = "1.180"
 
   s.homepage     = "https://github.com/PEPDigitalPublishing/PEPiFlyMSC"
 
@@ -19,25 +19,8 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = "iflyMSC.framework"
   
   s.static_framework = true
-
-  s.subspec "ise" do |ise|
-
-    ise.source_files  = "ise/*.{h,m}"
-
-  end
-
-  s.subspec "pcm" do |pcm|
-
-    pcm.source_files  = "pcm/*.{h,m}"
-
-  end
-
-  s.subspec "results" do |results|
-
-    results.source_files  = "ise/results/*.{h,m}"
-
-  end
-
+  
+  s.source_files = "**/*.{h,m}"
 
   s.frameworks = "CoreLocation","CoreTelephony","AddressBook","AudioToolbox","AVFoundation","SystemConfiguration","Foundation","UIKit","QuartzCore","CoreGraphics"
 
